@@ -30,6 +30,29 @@ body {
   text-align: center;
 }
 
+.wave-one {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-one svg {
+  position: relative;
+  display: block;
+  width: 150%;
+  height: 93px;
+  transform: rotateY(180deg);
+  z-index: 2;
+}
+
+.wave-one .shape-fill {
+  fill: var(--color-light);
+}
+
 
 `;
 

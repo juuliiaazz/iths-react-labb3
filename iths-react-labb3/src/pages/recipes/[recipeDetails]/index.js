@@ -1,6 +1,9 @@
-import DetailedMeal from "@/components/DetailedMeal";
 import GlobalStyles from "@/styles/GlobalStyles";
-import React from "react";
+import { useRouter } from "next/router";
+import { MainDiv } from "@/ui/Main";
+import DetailedMeal from "@/components/DetailedMeal";
+import { Button } from "@/ui/Button";
+import { DetailsMealNav } from "@/ui/DetailsMeal";
 
 // sida för recept-detaljer
 
@@ -38,14 +41,24 @@ export async function getStaticProps(context) {
 }
 
 export default function RecipeDetails({ meals }) {
+  const router = useRouter();
+
   return (
     <>
       <GlobalStyles />
-      <div>
-        {meals?.map((meal) => (
-          <DetailedMeal key={meal.idMeal} meal={meal}></DetailedMeal>
-        ))}
-      </div>
+      <MainDiv>
+        <DetailsMealNav>
+          <Button type="back" onClick={() => router.back()}>
+            &larr;
+          </Button>
+        </DetailsMealNav>
+
+        <div>
+          {meals?.map((meal) => (
+            <DetailedMeal key={meal.idMeal} meal={meal}></DetailedMeal>
+          ))}
+        </div>
+      </MainDiv>
     </>
   );
 }

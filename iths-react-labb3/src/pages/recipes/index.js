@@ -1,9 +1,8 @@
+import { useRef, useState } from "react";
 import Meal from "@/components/Meal";
-import { Pagination } from "@/components/Pagination";
 import GlobalStyles from "@/styles/GlobalStyles";
-import React, { useRef, useState } from "react";
-
-// sida för lista med recept
+import { MainDiv } from "@/ui/Main";
+import { Pagination } from "@/components/Pagination";
 
 export async function getStaticProps() {
   const res = await fetch(
@@ -39,19 +38,21 @@ export default function RecipeList({ listOfMeals }) {
     <>
       <GlobalStyles />
       <div>
-        <h1>All Recipes</h1>
-        <ul>
-          {currentPosts?.map((meal) => (
-            <Meal key={meal.idMeal} meal={meal}></Meal>
-          ))}
-        </ul>
-      </div>
-      <div>
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={handlePageChange}
-        />
+        <MainDiv>
+          <h1>All Recipes</h1>
+          <ul>
+            {currentPosts?.map((meal) => (
+              <Meal key={meal.idMeal} meal={meal}></Meal>
+            ))}
+          </ul>
+          <div>
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+            />
+          </div>
+        </MainDiv>
       </div>
     </>
   );
