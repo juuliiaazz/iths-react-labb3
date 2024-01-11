@@ -4,6 +4,7 @@ import { MainDiv } from "@/ui/Main";
 import DetailedMeal from "@/components/DetailedMeal";
 import { Button } from "@/ui/Button";
 import { DetailsMealNav } from "@/ui/DetailsMeal";
+import NavBar from "@/components/NavBar";
 
 // sida för recept-detaljer
 
@@ -46,6 +47,7 @@ export default function RecipeDetails({ meals }) {
   return (
     <>
       <GlobalStyles />
+      <NavBar />
       <MainDiv>
         <DetailsMealNav>
           <Button type="back" onClick={() => router.back()}>

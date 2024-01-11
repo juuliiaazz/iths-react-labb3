@@ -3,6 +3,8 @@ import Meal from "@/components/Meal";
 import GlobalStyles from "@/styles/GlobalStyles";
 import { MainDiv } from "@/ui/Main";
 import { Pagination } from "@/components/Pagination";
+import NavBar from "@/components/NavBar";
+import { PageTitle } from "@/ui/List";
 
 export async function getStaticProps() {
   const res = await fetch(
@@ -37,9 +39,10 @@ export default function RecipeList({ listOfMeals }) {
   return (
     <>
       <GlobalStyles />
+      <NavBar />
       <div>
         <MainDiv>
-          <h1>All Recipes</h1>
+          <PageTitle>All Recipes</PageTitle>
           <ul>
             {currentPosts?.map((meal) => (
               <Meal key={meal.idMeal} meal={meal}></Meal>

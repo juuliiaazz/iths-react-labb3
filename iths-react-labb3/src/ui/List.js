@@ -36,3 +36,9 @@ export const ListTitle = styled.h3`
     font-size: 16px;
   }
 `;
+
+export const PageTitle = styled.h1`
+  padding: 20px;
+  padding-top: 40px;
+  font-size: 2rem;
+`;

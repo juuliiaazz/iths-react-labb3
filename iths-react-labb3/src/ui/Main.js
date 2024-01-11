@@ -21,3 +21,18 @@ export const MainDiv = styled.div`
     margin: 5px auto auto;
   }
 `;
+
+export const HomeDiv = styled.div`
+  height: 60rem;
+`;
+
+export const Title = styled.h1`
+  padding: 20px;
+  padding-top: 40px;
+  font-size: 2rem;
+`;
+
+export const Paragraph = styled.p`
+  font-size: 1.5rem;
+  padding: 5px;
+`;

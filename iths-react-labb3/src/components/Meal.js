@@ -11,7 +11,7 @@ export default function Meal({ meal }) {
       <ListTitle>{meal.strMeal}</ListTitle>
       <div>
         <Link href={"/recipes/" + meal.idMeal} key={meal.idMeal}>
-          <Button>View recipe</Button>
+          <Button type="button">View recipe</Button>
         </Link>
       </div>
     </MealLists>
