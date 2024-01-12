@@ -79,7 +79,10 @@ export const InstructionsBox = styled.div`
   padding-top: 40px;
   padding-bottom: 40px;
 `;
-export const DetailsMealTitle = styled.h1``;
+export const DetailsMealTitle = styled.h1`
+  font-size: 2rem;
+`;
+
 export const DetailsParagraph = styled.p`
   width: 80vw;
   max-width: 60rem;
