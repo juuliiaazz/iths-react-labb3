@@ -1,8 +1,8 @@
 // Varje recept i recept-listan med bild, titel och knapp
 
 import Link from "next/link";
-import { ListImage, ListTitle, MealLists } from "@/ui/List";
-import { Button } from "@/ui/Button";
+import { ListImage, ListTitle, MealLists } from "../ui/List";
+import { Button } from "../ui/Button";
 
 export default function Meal({ meal }) {
   return (

@@ -1,10 +1,10 @@
-import GlobalStyles from "@/styles/GlobalStyles";
+import GlobalStyles from "../../../styles/GlobalStyles";
 import { useRouter } from "next/router";
-import { MainDiv } from "@/ui/Main";
-import DetailedMeal from "@/components/DetailedMeal";
-import { Button } from "@/ui/Button";
-import { DetailsMealNav } from "@/ui/DetailsMeal";
-import NavBar from "@/components/NavBar";
+import { MainDiv } from "../../../ui/Main";
+import { Button } from "../../../ui/Button";
+import { DetailsMealNav } from "../../../ui/DetailsMeal";
+import NavBar from "../../../components/NavBar";
+import DetailedMeal from "../../../components/DetailedMeal";
 
 // sida för recept-detaljer
 

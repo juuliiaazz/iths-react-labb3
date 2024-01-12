@@ -1,10 +1,10 @@
-import { useRef, useState } from "react";
-import Meal from "@/components/Meal";
-import GlobalStyles from "@/styles/GlobalStyles";
-import { MainDiv } from "@/ui/Main";
-import { Pagination } from "@/components/Pagination";
-import NavBar from "@/components/NavBar";
-import { PageTitle } from "@/ui/List";
+import { useState } from "react";
+import Meal from "../../components/Meal";
+import GlobalStyles from "../../styles/GlobalStyles";
+import { MainDiv } from "../../ui/Main";
+import { Pagination } from "../../components/Pagination";
+import NavBar from "../../components/NavBar";
+import { PageTitle } from "../../ui/List";
 
 export async function getStaticProps() {
   const res = await fetch(

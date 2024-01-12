@@ -5,7 +5,7 @@ import {
   NavItem,
   NavLink,
   NavigationContainer,
-} from "@/ui/NavBar";
+} from "../ui/NavBar";
 
 export default function NavBar() {
   const [click, setClick] = useState(false);

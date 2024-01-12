@@ -1,6 +1,6 @@
 import React from "react";
-import { HomeDiv, Paragraph, Title } from "@/ui/Main";
-import { Button } from "@/ui/Button";
+import { HomeDiv, Paragraph, Title } from "../ui/Main";
+import { Button } from "../ui/Button";
 import Link from "next/link";
 
 export default function Home() {

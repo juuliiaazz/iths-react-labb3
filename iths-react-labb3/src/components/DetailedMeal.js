@@ -8,7 +8,7 @@ import {
   ImageMealBox,
   InfoMealCard,
   InstructionsBox,
-} from "@/ui/DetailsMeal";
+} from "../ui/DetailsMeal";
 import Ingredients from "./Ingredients";
 
 // Detaljer för varje recept med titel, bild, ingredienser och instruktioner

@@ -1,5 +1,5 @@
 import React from "react";
-import { IngredientsBox, Tag, TagList } from "@/ui/DetailsMeal";
+import { IngredientsBox, Tag, TagList } from "../ui/DetailsMeal";
 
 export default function Ingredients({ meal }) {
   let ingredients = [];
